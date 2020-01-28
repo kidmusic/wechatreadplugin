@@ -1,0 +1,31 @@
+{
+    "manifest_version" : 2,
+    "name" : "微信读书助手",
+    "version": "1.0",
+    "description" : "微信读书网页版插件，使微信读书拥有更多功能。",
+    "icons" : {
+        "16" : "img/favicon_16h.png",
+        "32" : "img/favicon_32h.png",
+        "48" : "img/favicon_48h.png"
+    },
+
+    "permissions": [
+        "http://*/*","https://*/*",
+        "tabs",
+        "notifications",
+        "alarms"
+    ],
+
+    "browser_action" : {
+        "default_icon" : "img/favicon_32h.png"
+    },
+
+    "content_scripts": [
+        {
+             "matches": ["http://weread.qq.com/*","http://www.weread.qq.com/*","https://weread.qq.com/*","https://www.weread.qq.com/*",
+                         "http://r.qq.com/*","http://www.r.qq.com/*","https://r.qq.com/*","https://www.r.qq.com/*"],
+             "css": ["app.css"],
+             "js": ["jquery-3.2.1.min.js","app.js"]
+        }
+    ]
+}
