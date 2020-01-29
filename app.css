@@ -1,0 +1,15 @@
+.wr_whiteTheme .readerControls .eyemode .icon {
+    background-image: url(chrome-extension://__MSG_@@extension_id__/img/eyemode.png);
+}
+
+.readerControls .eyemode .icon {
+    background-image: url(chrome-extension://__MSG_@@extension_id__/img/eyemode2.png);
+}
+
+.wr_whiteTheme.eyemode .readerContent .app_content {
+    background-color: #C7EDCC;
+}
+
+.wr_whiteTheme.eyemode .readerTopBar {
+    background-color: #C7EDCC;
+}
